@@ -1,5 +1,10 @@
 #include <stdio.h>
-#include "exercise.h"
+void print_numbers_reverse(int start, int end) {
+	while(start > end-1) {
+		printf("%d\n", start);
+		start--;
+	}
+}
 
 void test(int start, int end){
   printf("Printing from %d to %d:\n", start, end);
@@ -8,6 +13,5 @@ void test(int start, int end){
 }
 
 int main() {
-  test(5, 1);
-  test(1, 5);
+  test(20, 4);
 }
