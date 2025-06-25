@@ -7,7 +7,7 @@ int main() {
   printf("numbers[2] = %d\n", numbers[2]);  // Output: 3
 
   // Accessing elements using pointers
-  printf("*(numbers + 2) = %d\n", *(numbers + 2));  // Output: 3
+  printf("*(numbers + 2) = %d\n", *(numbers + 2));  // Output: 3. first we move up the address / pointer in array  memory chunk by 2, which now should point to address second index (value 3). and now we derefence that address.
 
   // Pointer arithmetic
   int *ptr = numbers;
